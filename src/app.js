@@ -1,11 +1,11 @@
-const koa = require('koa');
-const express = require('express');
+import koa from 'koa';
+import webpack from 'webpack';
 import convert from 'koa-convert';
-const webpack = require('webpack');
 import webpackDevMiddleware  from './koaWebpackDevMiddleware';
+// import webpackDevMiddleware  from 'koa-webpack-dev-middleware';
 import webpackHotMiddleware from 'koa-webpack-hot-middleware';
 import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
-const config = require('../webpack.config.js');
+import config from '../webpack.config.js';
 
 const compiler = webpack(config);
 const app = new koa();
