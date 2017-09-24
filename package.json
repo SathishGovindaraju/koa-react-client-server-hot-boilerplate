@@ -13,6 +13,7 @@
     "babel-cli": "^6.26.0",
     "koa": "^2.3.0",
     "koa-convert": "^1.2.0",
+    "koa-react-router": "^2.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",
