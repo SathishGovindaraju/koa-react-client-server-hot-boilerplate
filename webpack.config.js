@@ -6,7 +6,11 @@ module.exports = [
     {
         name: 'client',
         target: 'web',
-        entry: ['webpack-hot-middleware/client?path=/__&timeout=20000', './src/client'],
+        entry: [
+          'react-hot-loader/patch',
+          'webpack-hot-middleware/client?path=/__&timeout=20000',
+          './src/client'
+        ],
         output: {
             path: dist,
             filename: 'client.js'
