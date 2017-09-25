@@ -4,8 +4,12 @@
   "description": "A boilerplate project for React (with server side rendering) with koa server and webpack-server-hot-middleware for both client and server hot reloading",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./src/app.js",
+    "start": "babel-node ./src/app.js --inspect",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "5.3.0"
   },
   "author": "Sathish Govindaraju",
   "license": "UNLICENSED",
